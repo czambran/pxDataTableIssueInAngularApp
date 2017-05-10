@@ -1,0 +1,28 @@
+<link rel="import" href="bower_components/polymer/polymer.html"/>
+
+<dom-module id="data-table-wrapper">
+  <template>
+    <px-data-table
+      filterable="true" sortable="true" selectable="true"
+      table-data={{data}}
+      language="en">
+
+      <px-data-table-column filterable name='first'></px-data-table-column>
+      <px-data-table-column filterable name='second'></px-data-table-column>
+    </px-data-table>
+  </template>
+</dom-module>
+
+<script>
+  Polymer({
+
+    is: 'data-table-wrapper',
+    properties: {
+        data: {
+            type: Array,
+            value: []
+        }
+    }
+  });
+</script>
+
