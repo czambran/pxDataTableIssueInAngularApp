@@ -1,0 +1,21 @@
+{
+  "name": "pxDataTableInAngularIssue",
+  "authors": [
+    "Christian Zambrano <christian.zambrano@ge.com>"
+  ],
+  "description": "Sample app that shows a race condition in px-data-table when routing using Angular's router",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "px-data-table": "2.1.5"
+  }
+}
