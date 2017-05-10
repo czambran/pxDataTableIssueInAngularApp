@@ -1,6 +1,14 @@
-# DataTableProblem
+# Angular app that shows race condition in px-data-table
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+The px-data-table component has a feature where if no columns have been specified it will use the
+ content of data-table property to generate the columns it needs to show. When this component is 
+ used in  an Angular app that has a route which uses this component and specifies the columns to show using 
+ px-data-table-column, when you route to it, it will display the specified columns plus the 
+ columns it calculates from the data resulting in duplicate columns.
+
+## Fetch Dependencies
+
+Run `npm run setup` to fetch npm and bower dependencies
 
 ## Development server
 
@@ -24,5 +32,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 Before running the tests make sure you are serving the app via `ng serve`.
 
 ## Further help
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
